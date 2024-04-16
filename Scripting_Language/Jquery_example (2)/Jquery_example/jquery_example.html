@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+
+  <button id="changeButton">Change Text</button>
+
+  <script>
+    $(document).ready(function() {
+      // jQuery code goes here
+
+      // Click event handler for the button
+      $("#changeButton").click(function() {
+        // Change the text of the heading
+        $("#heading").text("Text has been changed!");
+      });
+    });
+  </script>
+</body>
+</html>

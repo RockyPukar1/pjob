@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    function postComment() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "ajax_php_mysql.php");
+      request.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+          var status = this.responseText;
+          if (status === 'Available') {
+            document.getElementById("error").style.color='green';
+            document.getElementById("error").innerHTML="Username Found";
+            
+          } else {
+            var errorElement = document.getElementById("error");
+            errorElement.style.color = 'red';
+            errorElement.innerHTML = status;
+          }
+        }
+      };
+      var myForm = document.getElementById("myForm");
+      var formData = new FormData(myForm);
+      request.send(formData);
+    }
+  </script>
+</head>
+<body>
+  <form id="myForm">
+    <h1>Please search the available username</h1>
+    <input type="text" autocomplete="on" name="user" placeholder="User Name" onkeyup="postComment();" />
+  </form>
+  <div id="error"></div>
+</body>
+</html>

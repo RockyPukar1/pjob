@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>JavaScript Ajax POST Demo</title>
+<script>
+function postComment () {
+
+var request = new XMLHttpRequest();
+request.open ("POST", "ajax_post.php");
+request.onreadystatechange = function() {
+if(this.readyState ===4 && this.status===200)
+
+    document.getElementById("result").innerHTML=this.responseText;
+
+};
+var myForm = document.getElementById("myForm");
+var formData = new FormData (myForm);
+request.send (formData);
+}
+
+</script>
+</head>
+<body>
+<form id="myForm">
+<label>Name:</label>
+
+<div><input type="text" name="name"></div>
+<br>
+<label>Comment:</label>
+
+
+<div><textarea name="comment"></textarea></div>
+<p><button type="button" onclick="postComment ()">Post Comment</button></p>
+</form>
+<div id="result">
+<p>Content of the result DIV box will be replaced by the server response</p>
+</div>
+</body>
+</html>

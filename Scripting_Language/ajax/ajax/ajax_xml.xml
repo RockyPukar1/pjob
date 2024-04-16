@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<student>
+<bca>
+<title>Mr.</title>
+<name>Ankit Siwakoti</name>
+<address>Birtamode</address>
+<semester>Fourth</semester>
+<batch>First</batch>
+</bca>
+
+<bca>
+<title>Miss</title> 
+<name>Smirti Khanal</name>
+<address>Bhadrapur</address>
+<semester>Fourth</semester>
+<batch>First</batch>
+</bca>
+
+<bca>
+<title>Miss</title>
+<name>Poonam Tamang</name>
+<address>Bhadrapur</address>
+<semester>Second</semester>
+<batch>Second</batch>
+</bca>
+</student>
