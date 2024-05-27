@@ -26,7 +26,7 @@
     <link href='css/bootstrap.min.css' rel='stylesheet'>
 
     <!-- Template Stylesheet -->
-    <link href='../CSS/sty.css' rel='stylesheet'>
+    <link href='../css/sty.css' rel='stylesheet'>
     <script>
         // Initialize Bootstrap Tabs component
         var tabs = new bootstrap.TabPane(document.getElementById('myTabs'))

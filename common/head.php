@@ -29,7 +29,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="CSS/sty.css" rel="stylesheet">
+    <link href="css/sty.css" rel="stylesheet">
     
 <script>
     const urlParams = new URLSearchParams(window.location.search);
