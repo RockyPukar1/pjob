@@ -26,7 +26,7 @@
                                     <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3" style="width: 45px; height: 45px;">
                                         <i class="fa fa-phone-alt text-primary"></i>
                                     </div>
-                                    <span>+977 9876543210</span>
+                                    <span>+977 9823575991</span>
                                 </div>
                             </div>
                         </div>

@@ -307,7 +307,7 @@
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Contact</h5>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kathmandu, Nepal</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977 9876543210</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+977 9823575991</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>pinjob123@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -326,7 +326,7 @@
                             &copy; <a class="border-bottom" href="#">PINJOB</a>, All Right Reserved. 
 							
 							
-							Designed By <a class="border-bottom" href="#">Code By Pawan,Indira, Nischal</a>
+							Designed By <a class="border-bottom" href="#">Code By Pukar, Ajay</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">

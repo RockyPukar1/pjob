@@ -52,12 +52,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             // Password does not match
             $error_message = "Incorrect password";
-            
+
         }
     } else {
         // User does not exist
         $error_message = "User does not exist";
-        
+
     }
     $stmt->close();
     // Close the database connection
@@ -65,21 +65,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include( 'common/head.php') ?>
+<?php include ('common/head.php') ?>
 
 <body>
-    <?php include( 'common/navbar.php') ?>
+    <?php include ('common/navbar.php') ?>
 
 
-        <!-- sign in box. -->
-        
-           <br> <br>
-        <div class="reg-box">
+    <!-- sign in box. -->
+
+    <br> <br>
+    <div class="reg-box">
         <div class="form-box login">
             <form action="signinusr.php" method="post">
                 <h2 style="color: #00B074;"> User <br>Sign in</h2>
                 <?php if (isset($error_message)) { ?>
-                    <p class="error" script=color:red; ><?php echo $error_message; ?></p>
+                    <p class="error" style=color:red;><?php echo $error_message; ?></p>
                 <?php } ?>
                 <div class="input-box">
                     <span class="icon"><i class="fa-solid fa-user"></i></span>
@@ -87,39 +87,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="username">Username</label>
                 </div>
                 <div class="input-box">
-                <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                 <input type="password" class="input" name="password" id="password" required>
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="input" name="password" id="password" required>
                     <label for="password">Password</label>
-                    <span class="toggle-password" style=color:gray;  onclick="togglePasswordVisibility('password')"><i class="fa-solid fa-eye"></i></span>
-
+                    <span class="toggle-password" style=color:gray; onclick="togglePasswordVisibility('password')"><i
+                            class="fa-solid fa-eye"></i></span>
                 </div>
                 <div class="submit">
                     <input type="submit" class="btn1" value="Sign in" name="login_submit">
                 </div>
                 <div class="login-register">
-                    <p>Don't have an account? <a href="signup.html" class="register-link">Sign up</a></p>
+                    <p>Don't have an account? <a href="signupusr.php" class="register-link">Sign up</a></p>
                 </div>
             </form>
         </div>
     </div>
 
-            <!-- Sign in box. -->
-            <script>
-    function togglePasswordVisibility() {
-        var passwordInput = document.getElementById("password");
-        var eyeIcon = document.querySelector(".eye-icon i");
+    <!-- Sign in box. -->
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var eyeIcon = document.querySelector(".toggle-password i");
 
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-        } else {
-            passwordInput.type = "password";
-            eyeIcon.classList.remove("fa-eye-slash");
-            eyeIcon.classList.add("fa-eye");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
         }
-    }
-</script>
+    </script>
 
-        
-<?php include( 'common/footer.php') ?>
+
+    <?php include ('common/footer.php') ?>
